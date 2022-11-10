@@ -1,6 +1,8 @@
 <div>
   <div *ngFor="let product of productList">
-    {{ product.name }}<br />
-    {{ product.description }}
+    <div *ngIf="product.id!=1">
+      {{ product.name }}<br />
+      {{ product.description }}
+    </div>
   </div>
 </div>
