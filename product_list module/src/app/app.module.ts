@@ -1,9 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+// import {RouterModule, Routes} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
+
+
+// const routes: Routes = [
+//   {
+//     path: '',
+//     redirectTo: 'Products',
+//     pathMatch: 'full'
+//   },
+//   {
+//     path: 'Products',
+//     component: AppComponent
+//   }
+// ];
 
 @NgModule({
   declarations: [
@@ -12,7 +25,8 @@ import { ProductListComponent } from './product-list/product-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
